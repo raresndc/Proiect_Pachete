@@ -29,3 +29,13 @@ plt.xlabel("Anul")
 plt.ylabel("Venit ($bn)")
 
 plt.show()
+
+'''wearable, home and accessories = AirPods + Watch + HomePod'''
+'''iPhone revenue + sales'''
+'''Mac revenue + sales'''
+'''iPad revenue + sales'''
+
+''''''
+
+
+
