@@ -1,23 +1,23 @@
 ## Programare Python combinate sau individuale, minim 6 dintre următoarele facilităţi:
 - :white_check_mark: utilizarea listelor și a dicționarelor, incluzând metode specifice acestora;
 - :white_large_square: utilizarea seturilor și a tuplurilor, incluzând metode specifice acestora;
-- [x] definirea și apelarea unor funcții;
-- [x] utilizarea structurilor condiționale;
-- [x] utilizarea structurilor repetitive;
-- [x] importul unei fișier csv sau json în pachetul pandas;
-- accesarea datelor cu loc și iloc;
--  modificarea datelor în pachetul pandas;
-- [x] utilizarea funcțiilor de grup;
-- [x] tratarea valorilor lipsă;
-- ștergerea de coloane și înregistrări;
-- prelucrări statistice, gruparea și agregarea datalor în pachetul pandas;
-- [x] prelucrarea seturilor de date cu merge / join;
-- [x] reprezentare grafică a datelor cu pachetul matplotlib;
-- utilizarea pachetului scikit-learn (clusterizare, regresie logistică)
-- utilizarea pachetului statmodels (regresie multiplă).
+- :white_check_mark: definirea și apelarea unor funcții;
+- :white_check_mark: utilizarea structurilor condiționale;
+- :white_check_mark: utilizarea structurilor repetitive;
+- :white_check_mark: importul unei fișier csv sau json în pachetul pandas;
+- :white_large_square: accesarea datelor cu loc și iloc;
+- :white_large_square: modificarea datelor în pachetul pandas;
+- :white_check_mark: utilizarea funcțiilor de grup;
+- :white_check_mark: tratarea valorilor lipsă;
+- :white_large_square: ștergerea de coloane și înregistrări;
+- :white_large_square: prelucrări statistice, gruparea și agregarea datalor în pachetul pandas;
+- :white_check_mark: prelucrarea seturilor de date cu merge / join;
+- :white_check_mark: reprezentare grafică a datelor cu pachetul matplotlib;
+- :white_large_square: utilizarea pachetului scikit-learn (clusterizare, regresie logistică)
+- :white_large_square: utilizarea pachetului statmodels (regresie multiplă).
 
 ## Programare SAS: 
-combinate sau individuale, minim 6 dintre următoarele facilităţi: crearea unui set de date SAS din fișiere externe, crearea și folosirea de formate definite de utilizator, procesarea iterativă și condițională a datelor, crearea de subseturi de date, utilizarea de funcții SAS, combinarea seturilor de date prin proceduri specifice SAS și SQL, utilizarea de masive, utilizarea de proceduri pentru raportare, folosirea de proceduri statistice, generarea de grafice.
+Combinate sau individuale, minim 6 dintre următoarele facilităţi: crearea unui set de date SAS din fișiere externe, crearea și folosirea de formate definite de utilizator, procesarea iterativă și condițională a datelor, crearea de subseturi de date, utilizarea de funcții SAS, combinarea seturilor de date prin proceduri specifice SAS și SQL, utilizarea de masive, utilizarea de proceduri pentru raportare, folosirea de proceduri statistice, generarea de grafice.
 
 ## SAS Enterprise Guide:
 - importul unui fisier non-SAS; - interogări;
