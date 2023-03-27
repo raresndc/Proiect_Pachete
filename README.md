@@ -1,18 +1,18 @@
 ## Programare Python combinate sau individuale, minim 6 dintre următoarele facilităţi:
-- utilizarea listelor și a dicționarelor, incluzând metode specifice acestora;
+- [x] utilizarea listelor și a dicționarelor, incluzând metode specifice acestora;
 - utilizarea seturilor și a tuplurilor, incluzând metode specifice acestora;
-- definirea și apelarea unor funcții;
-- utilizarea structurilor condiționale;
-- utilizarea structurilor repetitive;
-- importul unei fișier csv sau json în pachetul pandas;
+- [x] definirea și apelarea unor funcții;
+- [x] utilizarea structurilor condiționale;
+- [x] utilizarea structurilor repetitive;
+- [x] importul unei fișier csv sau json în pachetul pandas;
 - accesarea datelor cu loc și iloc;
-- modificarea datelor în pachetul pandas;
-- utilizarea funcțiilor de grup;
-- tratarea valorilor lipsă;
+-  modificarea datelor în pachetul pandas;
+- [x] utilizarea funcțiilor de grup;
+- [x] tratarea valorilor lipsă;
 - ștergerea de coloane și înregistrări;
 - prelucrări statistice, gruparea și agregarea datalor în pachetul pandas;
-- prelucrarea seturilor de date cu merge / join;
-- reprezentare grafică a datelor cu pachetul matplotlib;
+- [x] prelucrarea seturilor de date cu merge / join;
+- [x] reprezentare grafică a datelor cu pachetul matplotlib;
 - utilizarea pachetului scikit-learn (clusterizare, regresie logistică)
 - utilizarea pachetului statmodels (regresie multiplă).
 
