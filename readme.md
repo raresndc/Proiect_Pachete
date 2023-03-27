@@ -1,6 +1,6 @@
 ## Programare Python combinate sau individuale, minim 6 dintre următoarele facilităţi:
-- :white_check_mark utilizarea listelor și a dicționarelor, incluzând metode specifice acestora;
-- :white_large_square utilizarea seturilor și a tuplurilor, incluzând metode specifice acestora;
+- :white_check_mark: utilizarea listelor și a dicționarelor, incluzând metode specifice acestora;
+- :white_large_square: utilizarea seturilor și a tuplurilor, incluzând metode specifice acestora;
 - [x] definirea și apelarea unor funcții;
 - [x] utilizarea structurilor condiționale;
 - [x] utilizarea structurilor repetitive;
