@@ -6,7 +6,7 @@
 - :white_check_mark: utilizarea structurilor repetitive;
 - :white_check_mark: importul unei fișier csv sau json în pachetul pandas;
 - :white_large_square: accesarea datelor cu loc și iloc;
-- :white_large_square: modificarea datelor în pachetul pandas;
+- :white_check_mark: modificarea datelor în pachetul pandas;
 - :white_check_mark: utilizarea funcțiilor de grup;
 - :white_check_mark: tratarea valorilor lipsă;
 - :white_large_square: ștergerea de coloane și înregistrări;
