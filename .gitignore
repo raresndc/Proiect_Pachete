@@ -2,4 +2,5 @@
 .DS_Store
 data.txt
 __pycache__/
-
+Sales/Merged_Sales.csv
+test.txt

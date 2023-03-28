@@ -10,7 +10,7 @@
 - :white_check_mark: utilizarea funcțiilor de grup;
 - :white_check_mark: tratarea valorilor lipsă;
 - :white_large_square: ștergerea de coloane și înregistrări;
-- :white_large_square: prelucrări statistice, gruparea și agregarea datalor în pachetul pandas;
+- :white_large_square: prelucrări statistice, gruparea și agregarea datelor în pachetul pandas;
 - :white_check_mark: prelucrarea seturilor de date cu merge / join;
 - :white_check_mark: reprezentare grafică a datelor cu pachetul matplotlib;
 - :white_large_square: utilizarea pachetului scikit-learn (clusterizare, regresie logistică)
