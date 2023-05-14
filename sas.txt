@@ -332,30 +332,14 @@ RUN;
 
 /*---------------calcul medii---------------*/
 
-DATA dataset_medii;
-    SET dataset_combinat_redenumit;
+proc means data = dataset_combinat_redenumit noprint;
+var sales1 sales2 sales3 sales4 sales5 sales6;
+output out=calcul_medii;
+run;
 
-
-    ARRAY col_array(*) sales1-sales6;
-    ARRAY media_array(*) media_coloana1-media_coloana6;
-
-    DO i = 1 TO DIM(col_array);
-        IF year > 2017 THEN DO;
-            media_array(i) = MEAN(col_array(i));
-        END;
-        ELSE DO;
-            media_array(i) = .;
-        END;
-    END;
-RUN;
-
-DATA dataset_medii;
-	SET dataset_medii (DROP = i);
-RUN;
-
-PROC PRINT DATA=dataset_medii;
-	TITLE 'Medii'
-RUN;
+PROC PRINT DATA=calcul_medii;
+	TITLE 'Medie pe ani';
+RUN
 
 ----------->M/Revenue<-----------
 PROC IMPORT DATAFILE="/home/u63359198/Proiect/iPad_annual_revenue.csv"
