@@ -1,4 +1,4 @@
-R/Sales
+----------->R/Revenue<-----------
 PROC IMPORT DATAFILE="/home/u63359473/Proiect/AirPod_annual_sales.csv"
             OUT=dataset_airPod
             DBMS=CSV
@@ -357,7 +357,7 @@ PROC PRINT DATA=dataset_medii;
 	TITLE 'Medii'
 RUN;
 
-M/Revenue
+----------->M/Revenue<-----------
 PROC IMPORT DATAFILE="/home/u63359198/Proiect/iPad_annual_revenue.csv"
             OUT=dataset_iPad
             DBMS=CSV
@@ -429,3 +429,35 @@ proc print data = dataset_iPhone_redenumit;
 var iPhoneRevenue;
 format iPhoneRevenue iPhoneRevenue.;
 run;
+
+DATA suma_coloane_revenues;
+    SET dataset_revenues;
+
+    array col_array(*) iPhoneRevenue MacRevenue iPadRevenue WearableAndAccessoriesRevenue;
+
+    suma = 0;
+
+    DO i = 1 TO dim(col_array);
+        suma = suma + col_array(i);
+    END;
+
+    KEEP year suma;
+
+RUN;
+
+PROC PRINT DATA=suma_coloane_revenues;
+	TITLE 'Suma sales pentru anii comuni';
+RUN;
+
+DATA suma_coloane_revenues2;
+    SET dataset_revenues;
+
+    suma = SUM(of iPhoneRevenue MacRevenue iPadRevenue WearableAndAccessoriesRevenue);
+
+    KEEP year suma;
+
+RUN;
+
+PROC PRINT DATA=suma_coloane_revenues2;
+	TITLE 'Suma sales pentru toti anii';
+RUN;
