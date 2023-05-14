@@ -1,4 +1,8 @@
 .idea
 .DS_Store
 data.txt
+<<<<<<< HEAD
 __pycache__
+=======
+Sales/Merged_Sales.csv
+>>>>>>> bcfaeb9f3f879ae29e1a79f1df2d12f659046ecf
