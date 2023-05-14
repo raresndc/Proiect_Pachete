@@ -1,3 +1,4 @@
+R/Sales
 PROC IMPORT DATAFILE="/home/u63359473/Proiect/AirPod_annual_sales.csv"
             OUT=dataset_airPod
             DBMS=CSV
@@ -10,7 +11,8 @@ PROC PRINT DATA=dataset_airPod;
 RUN;
 
 PROC IMPORT DATAFILE="/home/u63359473/Proiect/Apple_watch_sales.csv"
-            OUT=dataset_appleWatch
+            R/SalesOUT=dataset_appleWatch
+
             DBMS=CSV
             REPLACE;
     GETNAMES=YES;
@@ -354,3 +356,76 @@ RUN;
 PROC PRINT DATA=dataset_medii;
 	TITLE 'Medii'
 RUN;
+
+M/Revenue
+PROC IMPORT DATAFILE="/home/u63359198/Proiect/iPad_annual_revenue.csv"
+            OUT=dataset_iPad
+            DBMS=CSV
+            REPLACE;
+    GETNAMES=YES;
+RUN;
+
+DATA dataset_iPad_redenumit;
+	SET dataset_iPad;
+	RENAME 'Revenue'n = 'iPadRevenue'n;
+RUN;
+
+PROC IMPORT DATAFILE="/home/u63359198/Proiect/iPhone_annual_revenue.csv"
+            OUT=dataset_iPhone
+            DBMS=CSV
+            REPLACE;
+    GETNAMES=YES;
+RUN;
+
+DATA dataset_iPhone_redenumit;
+	SET dataset_iPhone;
+	RENAME 'Revenue'n = 'iPhoneRevenue'n;
+RUN;
+
+PROC IMPORT DATAFILE="/home/u63359198/Proiect/Mac_annual_revenue.csv"
+            OUT=dataset_Mac
+            DBMS=CSV
+            REPLACE;
+    GETNAMES=YES;
+RUN;
+
+DATA dataset_Mac_redenumit;
+	SET dataset_Mac;
+	RENAME 'Revenue'n = 'MacRevenue'n;
+RUN;
+
+
+PROC IMPORT DATAFILE="//home/u63359198/Proiect/Wearable_home_and_accessories_annual_revenue.csv"
+            OUT=dataset_Wearable_and_accessories
+            DBMS=CSV
+            REPLACE;
+    GETNAMES=YES;
+RUN;
+
+DATA dataset_W_and_A_redenumit;
+	SET dataset_Wearable_and_accessories;
+	RENAME 'Revenue'n = 'WearableAndAccessoriesRevenue'n;
+RUN;
+
+PROC SQL;
+	CREATE TABLE dataset_revenues AS
+	SELECT *
+	FROM dataset_iPhone_redenumit
+	FULL JOIN dataset_Mac_redenumit ON dataset_iPhone_redenumit.Year = dataset_Mac_redenumit.Year
+	FULL JOIN dataset_iPad_redenumit ON dataset_iPhone_redenumit.Year = dataset_iPad_redenumit.Year
+	FULL JOIN dataset_W_and_A_redenumit ON dataset_iPhone_redenumit.Year = dataset_W_and_A_redenumit.Year;
+QUIT;
+
+PROC PRINT DATA=dataset_revenues;
+	TITLE 'Dataset revenues';
+RUN;
+
+proc format;
+value iPhoneRevenue low-50 = 'Revenue slab' 50-100 = 'Revenue mediu' 100-150 ='Revenue mare' 150-high = 'Revenue semnificativ';
+run;
+
+title "Date cu format";
+proc print data = dataset_iPhone_redenumit;
+var iPhoneRevenue;
+format iPhoneRevenue iPhoneRevenue.;
+run;
