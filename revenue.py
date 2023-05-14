@@ -41,14 +41,44 @@ df_merged = df_merged.sort_values(by='Year')
 df_merged = df_merged.fillna(0)
 df_merged = df_merged.set_index('Year')
 
-# afișarea cadrelor de date combinate și completate
+# afișarea data frame-urilor combinate și completate
 pd.options.display.max_columns = None
-print('Cadru de date combinat și completat cu valori 0:\n', df_merged)
+print('Data Frame combinat și completat cu valori 0:\n', df_merged)
 
 # media revenue-urilor obtinute de companie pe fiecare divizie
+sum_apple = df_merged['Apple Revenue'].sum()
 print('\nSuma veniturilor Apple: ', df_merged['Apple Revenue'].sum(),
       '\nMedia veniturilor Apple: ', df_merged['Apple Revenue'].mean())
-print('Valoarea mediana', df_merged['Apple Revenue'].median())
+print('Valoarea mediana a veniturilor Apple: ', df_merged['Apple Revenue'].median())
+
+sum_iphone = df_merged['iPhone Revenue'].sum()
+print('\nSuma veniturilor iPhone: ', df_merged['iPhone Revenue'].sum(),
+      '\nMedia veniturilor iPhone: ', df_merged['iPhone Revenue'].mean())
+print('Valoarea mediana a veniturilor iPhone: ', df_merged['iPhone Revenue'].median())
+
+sum_iPad = df_merged['iPad Revenue'].sum()
+print('\nSuma veniturilor iPad: ', df_merged['iPad Revenue'].sum(),
+      '\nMedia veniturilor iPad: ', df_merged['iPad Revenue'].mean())
+print('Valoarea mediana a veniturilor iPad: ', df_merged['iPad Revenue'].median())
+
+sum_mac = df_merged['Mac Revenue'].sum()
+print('\nSuma veniturilor Mac: ', df_merged['Mac Revenue'].sum(),
+      '\nMedia veniturilor Mac: ', df_merged['Mac Revenue'].mean())
+print('Valoarea mediana a veniturilor Mac: ', df_merged['Mac Revenue'].median())
+
+sum_accessories = df_merged['Accessories Revenue'].sum()
+print('\nSuma veniturilor Accessories: ', df_merged['Accessories Revenue'].sum(),
+      '\nMedia veniturilor Accessories: ', df_merged['Accessories Revenue'].mean())
+print('Valoarea mediana a veniturilor Accessories: ', df_merged['Accessories Revenue'].median())
+
+sum_services = df_merged['Services Revenue'].sum()
+print('\nSuma veniturilor Services: ', df_merged['Services Revenue'].sum(),
+      '\nMedia veniturilor Services: ', df_merged['Services Revenue'].mean())
+print('Valoarea mediana a veniturilor Services: ', df_merged['Services Revenue'].median())
+
+sum_others = sum_apple - sum_iphone - sum_iPad - sum_mac - sum_accessories - sum_services
+print('\nVenituri Apple obtinute din alte surse: ' + str(sum_others))
+print('Procent: ' + str((sum_others * 100)/sum_apple) + '%')
 
 # functii
 plot_boxplot(df_merged, 'Apple Revenue', title='Boxplot al medianei si quartilelor veniturilor Apple din 2006 pana in prezent',
@@ -81,7 +111,11 @@ print('\nValorile maxime pentru fiecare cheie:\n' + str(obtine_maximele(dict_fil
 # for key, value in df_merged.items():
 #     if value == 0:
 #         df_merged = df_merged.drop(key, axis=0)
-df_merged = df_merged.dropna(subset=['Apple Revenue', 'iPhone Revenue', 'iPad Revenue',
-    'Mac Revenue', 'Accessories Revenue', 'Services Revenue'], how='all')
 
-print('\nData Frame-ul fara inregistrari ce contin valoarea 0:\n' + str(df_merged))
+df = df_merged.query('`Apple Revenue` != 0 and `iPhone Revenue` != 0 and `iPad Revenue` != 0 and '
+                            '`Mac Revenue` != 0 and `Accessories Revenue` != 0 and `Services Revenue` != 0')
+
+print('\nData Frame-ul fara inregistrari ce contin valoarea 0:\n' )
+print(df)
+
+
