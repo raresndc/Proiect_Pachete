@@ -26,8 +26,8 @@ for var in variables:
     df_merged1.loc[(df_merged1[var]<10.0),[var]]=10.0
 
 df_merged['Total'] = df_merged[variables].sum(axis=1)
-print("Most important columms\n",df_merged1.drop(columns=df_merged1.columns[[1,2,3]],axis=1))
+print("Most important columns\n",df_merged1.drop(columns=df_merged1.columns[[1,2,3]],axis=1))
 
-print("First five years\n", df_merged.iloc[:5,:])
+print("Last five years\n", df_merged.iloc[:5,:])
 df_merged.to_csv("Sales/Merged_Sales.csv")
 
