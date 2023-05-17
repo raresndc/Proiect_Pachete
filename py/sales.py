@@ -1,16 +1,16 @@
 import pandas as pd
 
-df_headphones_sales = pd.read_csv("Sales/AirPod_annual_sales.csv")
+df_headphones_sales = pd.read_csv("../Sales/AirPod_annual_sales.csv")
 df_headphones_sales = df_headphones_sales.rename(columns={'Sales (mm)' : 'Headphone-Sales'})
-df_smartwatch_sales = pd.read_csv("Sales/Apple_watch_sales.csv")
+df_smartwatch_sales = pd.read_csv("../Sales/Apple_watch_sales.csv")
 df_smartwatch_sales = df_smartwatch_sales.rename(columns={'Sales (mm)' : 'Smartwatch-Sales'})
-df_smartspeaker_sales = pd.read_csv("Sales/HomePod_annual_sales.csv")
+df_smartspeaker_sales = pd.read_csv("../Sales/HomePod_annual_sales.csv")
 df_smartspeaker_sales = df_smartspeaker_sales.rename(columns={'Sales (mm)' : 'Smartspeaker-Sales'})
-df_tablet_sales = pd.read_csv("Sales/iPad_annual_sales.csv")
+df_tablet_sales = pd.read_csv("../Sales/iPad_annual_sales.csv")
 df_tablet_sales = df_tablet_sales.rename(columns={'Sales (mm)' : 'Tablet-Sales'})
-df_phone_sales = pd.read_csv("Sales/iPhone_annual_sales.csv")
+df_phone_sales = pd.read_csv("../Sales/iPhone_annual_sales.csv")
 df_phone_sales = df_phone_sales.rename(columns={'Sales (mm)' : 'Phone-Sales'})
-df_pc_sales = pd.read_csv("Sales/Mac_annual_sales.csv")
+df_pc_sales = pd.read_csv("../Sales/Mac_annual_sales.csv")
 df_pc_sales = df_pc_sales.rename(columns={'Sales (mm)' : 'Pc-Sales'})
 
 df_merged = pd.merge(df_headphones_sales, df_smartwatch_sales, on='Year', how='outer')
