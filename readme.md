@@ -1,4 +1,6 @@
-## Programare Python combinate sau individuale, minim 6 dintre următoarele facilităţi:
+## [Revenue data](https://github.com/raresndc/Proiect_Pachete/tree/main/Revenue)
+## [Sales data](https://github.com/raresndc/Proiect_Pachete/tree/main/Sales)
+## [Programare Python combinate sau individuale, minim 6 dintre următoarele facilităţi:](https://github.com/raresndc/Proiect_Pachete/tree/main/py)
 - :white_check_mark: utilizarea listelor și a dicționarelor, incluzând metode specifice acestora;
 - :white_large_square: utilizarea seturilor și a tuplurilor, incluzând metode specifice acestora;
 - :white_check_mark: definirea și apelarea unor funcții;
@@ -16,7 +18,7 @@
 - :white_large_square: utilizarea pachetului scikit-learn (clusterizare, regresie logistică)
 - :white_large_square: utilizarea pachetului statmodels (regresie multiplă).
 
-## Programare SAS: 
+## [Programare SAS:](https://github.com/raresndc/Proiect_Pachete/blob/main/programare_sas.sas)
 Combinate sau individuale, minim 6 dintre următoarele facilităţi: crearea unui set de date SAS din fișiere externe, crearea și folosirea de formate definite de utilizator, procesarea iterativă și condițională a datelor, crearea de subseturi de date, utilizarea de funcții SAS, combinarea seturilor de date prin proceduri specifice SAS și SQL, utilizarea de masive, utilizarea de proceduri pentru raportare, folosirea de proceduri statistice, generarea de grafice.
 
 ## SAS Enterprise Guide:
@@ -29,12 +31,3 @@ Combinate sau individuale, minim 6 dintre următoarele facilităţi: crearea unu
 - formate definite de utilizator;
 - crearea unui document compus;
 - stiluri create de utilizator.
-
-## Proiectul va fi scris în MS Word și salvat in pdf, va fi organizat pe pachete software și pe funcții, iar pentru fiecare funcție vor fi specificate:
-- Definirea problemei
-- Informații necesare pentru rezolvare
-- Metodedecalcul,algoritmi,formuledecalculutilizate(dupacaz) 
-- Prezentarea rezultatelor
-- Interpretarea economica a rezultatelor
-
-
