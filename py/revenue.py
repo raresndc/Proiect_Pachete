@@ -3,27 +3,27 @@ import matplotlib.pyplot as plt
 from functii import *
 
 # citirea datelor din csv-uri
-df_apple_revenue = pd.read_csv('../Revenue/Apple_annual_revenue.csv')
+df_apple_revenue = pd.read_csv('Revenue/Apple_annual_revenue.csv')
 df_apple_revenue = df_apple_revenue.rename(columns={'Revenue ($bn)' : 'Apple Revenue'})
 print('Data Frame in care sunt prezentate veniturile Apple: \n', df_apple_revenue, '\n')
 
-df_iphone_revenue = pd.read_csv('../Revenue/iPhone_annual_revenue.csv')
+df_iphone_revenue = pd.read_csv('Revenue/iPhone_annual_revenue.csv')
 df_iphone_revenue = df_iphone_revenue.rename(columns={'Revenue ($bn)' : 'iPhone Revenue'})
 print('Data Frame in care sunt prezentate veniturile iPhone:\n', df_iphone_revenue, '\n')
 
-df_ipad_revenue = pd.read_csv('../Revenue/iPad_annual_revenue.csv')
+df_ipad_revenue = pd.read_csv('Revenue/iPad_annual_revenue.csv')
 df_ipad_revenue = df_ipad_revenue.rename(columns={'Revenue ($bn)' : 'iPad Revenue'})
 print('Data Frame in care sunt prezentate veniturile iPad:\n', df_ipad_revenue, '\n')
 
-df_mac_revenue = pd.read_csv('../Revenue/Mac_annual_revenue.csv')
+df_mac_revenue = pd.read_csv('Revenue/Mac_annual_revenue.csv')
 df_mac_revenue = df_mac_revenue.rename(columns={'Revenue ($bn)' : 'Mac Revenue'})
 print('Data Frame in care sunt prezentate veniturile Mac:\n', df_mac_revenue, '\n')
 
-df_accessories_revenue = pd.read_csv('../Revenue/Wearable_home_and_accessories_annual_revenue.csv')
+df_accessories_revenue = pd.read_csv('Revenue/Wearable_home_and_accessories_annual_revenue.csv')
 df_accessories_revenue = df_accessories_revenue.rename(columns={'Revenue ($bn)' : 'Accessories Revenue'})
 print('Data Frame in care sunt prezentate veniturile aduse din accesorii:\n', df_accessories_revenue, '\n')
 
-df_services_revenue = pd.read_csv('../Revenue/Apple_services_annual_revenue.csv')
+df_services_revenue = pd.read_csv('Revenue/Apple_services_annual_revenue.csv')
 df_services_revenue = df_services_revenue.rename(columns={'Revenue ($bn)' : 'Services Revenue'})
 print('Data Frame in care sunt prezentate veniturile aduse din serviciile Apple:\n', df_services_revenue, '\n')
 
