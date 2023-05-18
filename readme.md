@@ -21,16 +21,16 @@ Combinate sau individuale, minim 6 dintre următoarele facilităţi:
 
 ## [Programare SAS:](https://github.com/raresndc/Proiect_Pachete/blob/main/programare_sas.sas)
 Combinate sau individuale minim 6 dintre următoarele facilităţi:
-- crearea unui set de date SAS din fișiere externe;
-- crearea și folosirea de formate definite de utilizator;
-- procesarea iterativă și condițională a datelor;
-- crearea de subseturi de date;
-- utilizarea de funcții SAS;
-- combinarea seturilor de date prin proceduri specifice SAS și SQL;
-- utilizarea de masive;
-- utilizarea de proceduri pentru raportare;
-- folosirea de proceduri statistice;
-- generarea de grafice.
+- :white_check_mark: crearea unui set de date SAS din fișiere externe;
+- :white_check_mark: crearea și folosirea de formate definite de utilizator;
+- :white_check_mark: procesarea iterativă și condițională a datelor;
+- :white_check_mark: crearea de subseturi de date;
+- :white_check_mark: utilizarea de funcții SAS;
+- :white_check_mark: combinarea seturilor de date prin proceduri specifice SAS și SQL;
+- :white_check_mark: utilizarea de masive;
+- :white_large_square: utilizarea de proceduri pentru raportare;
+- :white_check_mark: folosirea de proceduri statistice;
+- :white_large_square: generarea de grafice.
 
 ## [SAS Enterprise Guide:](https://github.com/raresndc/Proiect_Pachete/blob/main/sas_enterprise.egp)
 - :white_check_mark: importul unui fișier non-SAS; 
