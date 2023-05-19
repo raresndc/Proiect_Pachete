@@ -461,3 +461,9 @@ proc print data = suma_coloane_revenues2;
 var suma;
 format suma suma.;
 run;
+
+TITLE "Distributia vânzărilor totale";
+PROC GCHART data=suma_coloane_revenues2;
+  VBAR year / SUMVAR=suma discrete;
+RUN;
+QUIT;

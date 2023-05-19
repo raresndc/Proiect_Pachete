@@ -30,7 +30,7 @@ Combinate sau individuale minim 6 dintre următoarele facilităţi:
 - :white_check_mark: utilizarea de masive;
 - :white_large_square: utilizarea de proceduri pentru raportare;
 - :white_check_mark: folosirea de proceduri statistice;
-- :white_large_square: generarea de grafice.
+- :white_check_mark: generarea de grafice.
 
 ## [SAS Enterprise Guide:](https://github.com/raresndc/Proiect_Pachete/blob/main/sas_enterprise.egp)
 - :white_check_mark: importul unui fișier non-SAS; 
